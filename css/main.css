@@ -100,6 +100,20 @@ button {
 .header .header-nav .header-nav-list {
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .header .header-nav .header-nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .header-nav .header-nav-list {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .header .header-nav .header-nav-list .header-nav-list-item .header-nav-list-item-link {
   text-transform: lowercase;
